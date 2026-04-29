@@ -49,26 +49,27 @@ In the code, the learning rate is represented as `-0.001` because the update rul
 ```text
 .
 ├── README.md
-├── pom.xml
-├── run.sh
-├── data/                       # expected location of Fashion-MNIST CSV files
-└── src/
-    └── main/
-        └── java/
-            └── cz/muni/fi/pv021/impl/
-                ├── Main.java
-                ├── ActivationFunction.java
-                ├── GradientComputer.java
-                ├── NetworkTrainer.java
-                ├── NetworkTester.java
-                ├── LossFunctions/
-                │   └── CategoricalCrossEntropy.java
-                ├── Vectors/
-                │   └── Vectors.java
-                └── network/
-                    ├── Network.java
-                    ├── Neuron.java
-                    └── NeuronLayer.java
+└── nn_project/
+    ├── pom.xml
+    ├── run.sh
+    ├── data/                       # expected location of Fashion-MNIST CSV files
+    └── src/
+        └── main/
+            └── java/
+                └── cz/muni/fi/pv021/impl/
+                    ├── Main.java
+                    ├── ActivationFunction.java
+                    ├── GradientComputer.java
+                    ├── NetworkTrainer.java
+                    ├── NetworkTester.java
+                    ├── LossFunctions/
+                    │   └── CategoricalCrossEntropy.java
+                    ├── Vectors/
+                    │   └── Vectors.java
+                    └── network/
+                        ├── Network.java
+                        ├── Neuron.java
+                        └── NeuronLayer.java
 ```
 
 ## Data format
@@ -90,16 +91,16 @@ Pixel values are normalized in the code by dividing by `255`.
 
 ## Usage
 
-The project is designed to be run from the project root using the provided `run.sh` script:
+From the repository root, enter the project folder:
+
+```bash
+cd nn_project
+```
+
+Then run the provided script:
 
 ```bash
 ./run.sh
-```
-
-If needed, make the script executable first:
-
-```bash
-chmod +x run.sh
 ```
 
 The script builds the Maven project and runs the main class:
