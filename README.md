@@ -49,10 +49,13 @@ In the code, the learning rate is represented as `-0.001` because the update rul
 ```text
 .
 ├── README.md
+├── .gitignore
 └── nn_project/
     ├── pom.xml
     ├── run.sh
-    ├── data/                       # expected location of Fashion-MNIST CSV files
+    ├── example_test_predictions.csv
+    ├── data/                       # place Fashion-MNIST CSV files here
+    ├── evaluator/                  # provided evaluator for checking prediction format/accuracy
     └── src/
         └── main/
             └── java/
