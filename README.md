@@ -76,18 +76,18 @@ In the code, the learning rate is represented as `-0.001` because the update rul
 
 The dataset files are not included in this repository because of file-size constraints.
 
-The code expects the Fashion-MNIST CSV files to be placed in a `data/` folder with the following filenames:
+This project uses Fashion-MNIST, a dataset of `28 × 28` grayscale images from 10 clothing categories. More information about the dataset is available in the original paper: [Fashion-MNIST paper](https://arxiv.org/pdf/1708.07747).
+
+The original Fashion-MNIST data is available from the Zalando Research GitHub repository: [Fashion-MNIST data](https://github.com/zalandoresearch/fashion-mnist/tree/master/data/fashion).
+
+This implementation expects the data in CSV format. To run the project, place the CSV files in the `nn_project/data/` folder with the following filenames:
 
 ```text
-data/fashion_mnist_train_vectors.csv
-data/fashion_mnist_train_labels.csv
-data/fashion_mnist_test_vectors.csv
-data/fashion_mnist_test_labels.csv
+nn_project/data/fashion_mnist_train_vectors.csv
+nn_project/data/fashion_mnist_train_labels.csv
+nn_project/data/fashion_mnist_test_vectors.csv
+nn_project/data/fashion_mnist_test_labels.csv
 ```
-
-Each vector file contains flattened `28 × 28` grayscale images, represented as 784 pixel values per sample. Each label file contains one integer class label per line.
-
-Pixel values are normalized in the code by dividing by `255`.
 
 ## Usage
 
